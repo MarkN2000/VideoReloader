@@ -1,5 +1,7 @@
 # VideoReloader
 
+[![Thunderstore](https://img.shields.io/badge/Thunderstore-Resonite-5c81f7)](https://thunderstore.io/c/resonite/)
+
 ![VideoReloader](https://raw.githubusercontent.com/MarkN2000/VideoReloader/main/icon.png)
 
 A [Resonite](https://resonite.com/) mod that reloads videos in your current session on your client.
@@ -16,12 +18,8 @@ Reloading briefly interrupts video and audio on your client. The mod leaves shar
 ## Installation
 
 1. Install [BepisLoader](https://thunderstore.io/c/resonite/p/ResoniteModding/BepisLoader/).
-2. Download `VideoReloader-0.1.0.zip` from [Releases](https://github.com/MarkN2000/VideoReloader/releases) and import it as a local mod in Gale. Use the ZIP, not the DLL inside it.
+2. Download the ZIP from [Releases](https://github.com/MarkN2000/VideoReloader/releases) and import it into Gale.
 
 The package declares BepInExResoniteShim, BepisResoniteWrapper, and BepisModSettings as dependencies.
-
-## Status
-
-Build and offline checks pass. Initial user testing reports successful operation; detailed multiplayer validation is still pending. World logic that reacts to video loading may have its own side effects.
 
 [markn's homepage](https://markn2000.com/posts/2025-09-08-resonite-mod-list/)
