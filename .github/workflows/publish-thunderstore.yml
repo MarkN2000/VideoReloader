@@ -70,8 +70,9 @@ jobs:
           print(f"Validated VideoReloader {version}.")
 
           url = f"https://thunderstore.io/api/experimental/package/markn2000/VideoReloader/{version}/"
+          request = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "VideoReloader-Release (+https://github.com/MarkN2000/VideoReloader)"})
           try:
-              with urllib.request.urlopen(url, timeout=30) as response:
+              with urllib.request.urlopen(request, timeout=30) as response:
                   published = json.load(response)
               if (published.get("namespace"), published.get("name"), published.get("version_number")) != ("markn2000", "VideoReloader", version):
                   raise SystemExit("Unexpected Thunderstore version response.")
