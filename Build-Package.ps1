@@ -25,7 +25,7 @@ $manifest = [ordered]@{
     website_url = 'https://github.com/MarkN2000/VideoReloader'
     dependencies = $dependencies
 } | ConvertTo-Json
-$documents = @('README.md', 'icon.png')
+$documents = @('README.md', 'LICENSE', 'icon.png')
 
 # Replace the completed ZIP only after validation passes.
 try {

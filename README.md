@@ -15,4 +15,8 @@ Reloading briefly interrupts video and audio on your client. The mod leaves shar
 1. Install [BepisLoader](https://thunderstore.io/c/resonite/p/ResoniteModding/BepisLoader/).
 2. Install via a Thunderstore mod manager or download from [Releases](https://github.com/MarkN2000/VideoReloader/releases).
 
+## License
+
+[MIT](https://github.com/MarkN2000/VideoReloader/blob/main/LICENSE) © 2026 markn2000
+
 [markn's homepage](https://markn2000.com/posts/2025-09-08-resonite-mod-list/)
