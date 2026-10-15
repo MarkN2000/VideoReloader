@@ -1,6 +1,6 @@
 # VideoReloader
 
-[![Thunderstore](https://img.shields.io/badge/Thunderstore-Resonite-5c81f7)](https://thunderstore.io/c/resonite/)
+[![Thunderstore Badge](https://modding.resonite.net/assets/available-on-thunderstore.svg)](https://thunderstore.io/c/resonite/)
 
 ![VideoReloader](https://raw.githubusercontent.com/MarkN2000/VideoReloader/main/icon.png)
 
