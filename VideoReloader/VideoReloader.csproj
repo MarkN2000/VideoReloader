@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GamePath Condition="'$(GamePath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Resonite</GamePath>
+    <DevProfile Condition="'$(DevProfile)' == ''">$(APPDATA)\com.kesomannen.gale\resonite\profiles\Mod開発</DevProfile>
+    <SettingsPath Condition="'$(SettingsPath)' == ''">$(APPDATA)\com.kesomannen.gale\cache\ResoniteModding-BepisModSettings\1.6.6\BepInEx\plugins\ResoniteModding-BepisModSettings\BepisModSettings</SettingsPath>
+  </PropertyGroup>
+  <!-- 本体・依存Modは参照のみ。出力へのコピーやゲームへの配置は行わない。 -->
+  <ItemGroup>
+    <Reference Include="$(GamePath)\FrooxEngine.dll;$(GamePath)\Elements.Core.dll;$(GamePath)\NYoutubeDL.dll" Private="false" />
+    <Reference Include="$(DevProfile)\BepInEx\core\BepInEx.Core.dll;$(DevProfile)\BepInEx\core\BepInEx.NET.Common.dll" Private="false" />
+    <Reference Include="$(DevProfile)\BepInEx\plugins\ResoniteModding-BepInExResoniteShim\BepInExResoniteShim\BepInExResoniteShim.dll" Private="false" />
+    <Reference Include="$(DevProfile)\BepInEx\plugins\ResoniteModding-BepisResoniteWrapper\BepisResoniteWrapper\BepisResoniteWrapper.dll" Private="false" />
+    <Reference Include="$(SettingsPath)\BepisModSettings.dll" Private="false" />
+  </ItemGroup>
+</Project>
